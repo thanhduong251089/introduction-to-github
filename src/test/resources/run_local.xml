@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Selenium 2 Exam Test">
+    <test name="Test" parallel="methods" thread-count="1">
+        <parameter name="browser" value="chrome"></parameter>
+        <parameter name="remote" value="false"></parameter>
+        <classes>
+            <class name="testcase.da_login.Login"></class>
+            <class name="testcase.da_main_parent.MainPage"></class>
+            <class name="testcase.da_dp.DataProfile"></class>
+        </classes>
+    </test>
+</suite>
